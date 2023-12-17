@@ -23,7 +23,10 @@ app.get("/", (req,res)=>{
     res.send("HomePage")
 })
 
-
+(async function (){
+    await connection
+          console.log("DB connected..")
+})();
 
 app.listen(PORT, async ()=>{
     try {
